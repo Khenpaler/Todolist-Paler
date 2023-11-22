@@ -93,7 +93,9 @@ export default function TodoScreen() {
               styles.inputText,
               isDarkMode && styles.darkModeInput,
             ]}
+            textColor={isDarkMode ? 'black' : 'white'}
             placeholder={'Tap to create a task'}
+            placeholderTextColor={isDarkMode ? 'black' : 'white'}
             value={task}
             onChangeText={(text) => setTask(text)}
             multiline={true}
@@ -150,7 +152,6 @@ const styles = StyleSheet.create({
   inputText: {
     padding: 2,
     backgroundColor: 'black',
-    color: 'white',
     width: 370,
     paddingHorizontal: 15,
     borderTopEndRadius: 20,
@@ -159,7 +160,6 @@ const styles = StyleSheet.create({
   },
   darkModeInput: {
     backgroundColor: 'white',
-    color: 'black',
   },
   addWrapper: {
     width: 80,
