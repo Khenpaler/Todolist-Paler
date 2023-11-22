@@ -76,6 +76,7 @@ export default function TodoScreen() {
                 text={item} 
                 onDelete={() => handleDeleteTask(index)}
                 onEdit={() => handleEditTask(index)}
+                isDarkMode={isDarkMode}
               />
             ))}
           </ScrollView>
